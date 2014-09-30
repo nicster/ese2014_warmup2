@@ -49,14 +49,14 @@
 			</c:forEach>
         </form:select>
         
+        <a href="/Skeleton/team">Create a new Team</a>
+        
         <div class="form-actions">
             <button type="submit" class="btn btn-primary">Sign up</button>
             <button type="button" class="btn">Cancel</button>
         </div>
     </fieldset>
 </form:form>
-
-<form method="get" action="/Skeleton/team"><button type="submit">Create Team</button></form>
 
 
 

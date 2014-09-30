@@ -8,6 +8,7 @@
 
 <h1>Sign Up Complete!</h1>
 
+<a href="/Skeleton/">Go back to the sign-up page</a>
 
 
 <c:import url="template/footer.jsp" />

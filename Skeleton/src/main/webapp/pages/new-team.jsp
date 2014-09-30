@@ -33,6 +33,8 @@
                 ${page_error}
         </div>
     </c:if>
+    
+    <a href="/Skeleton/">Go back to the sign-up page </a>
 
 
 <c:import url="template/footer.jsp" />

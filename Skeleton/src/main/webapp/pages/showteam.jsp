@@ -7,6 +7,7 @@
 <c:import url="template/header.jsp" />
 
 <h1>Creation of team successful!</h1>
+<a href="/Skeleton/">Go back to the sign-up page</a>
 
 
 
