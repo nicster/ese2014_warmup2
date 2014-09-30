@@ -9,7 +9,6 @@
 
 <h1>Sign Up Here!</h1>
 
-
 <form:form method="post" modelAttribute="signupForm" action="create" id="signupForm" cssClass="form-horizontal"  autocomplete="off">
     <fieldset>
         <legend>Enter Your Information</legend>
@@ -39,12 +38,25 @@
                 <form:errors path="lastName" cssClass="help-inline" element="span"/>
             </div>
         </div>
+        
+        <c:set var="teamErrors"><form:errors path="teamName"/></c:set>
+        <label class="control-label" for="field-lastName">Team</label>
+        <form:select path="teamName">
+			<c:forEach items="${teams }" var="teams">
+				<option value="${teams.teamName }">
+					<c:out value="${teams.teamName }"/>
+				</option>
+			</c:forEach>
+        </form:select>
+        
         <div class="form-actions">
             <button type="submit" class="btn btn-primary">Sign up</button>
             <button type="button" class="btn">Cancel</button>
         </div>
     </fieldset>
 </form:form>
+
+<form method="get" action="/Skeleton/team"><button type="submit">Create Team</button></form>
 
 
 
